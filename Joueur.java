@@ -149,7 +149,7 @@ public class Joueur {
         System.out.println("Tapez v pour vertical ou h pour h");
         char sens = Ut.saisirCaractere();
 
-        if (p.placementValide(mot, numLig, numCol, sens, this.chevalet) && Plateau.verifCapeloDico(mot)) {
+        if (p.placementValide(mot, numLig, numCol, sens, this.chevalet) && Scrabble.scrabbleDico.contient(mot)) {
 
             this.joueMotAux(p, s, nbPointsJet, mot, numLig, numCol, sens);
             return true;

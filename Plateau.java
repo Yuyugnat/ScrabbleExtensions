@@ -156,12 +156,6 @@ public class Plateau {
 
     }
 
-    public static boolean verifCapeloDico(String mot) {
-        Ut.afficher("le mot " + mot
-                + " existe-t-il bien dans le dictionnaire et est-il en majuscule?   Si oui tappez true, sinon tappez false  ");
-        return Ut.saisirBooleen();
-    }
-
     public int nbPointsPlacement(String mot, int numLig, int numCol, char sens, int[] nbPointsJet) {
 
         int nbPoint = 0;
